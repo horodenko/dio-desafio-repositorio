@@ -1,0 +1,517 @@
+O que é Git? Criado em 2005 por Linus Torvalds (Criador do Linux)., é um sistema de versionamento de código distribuído.
+
+	-- INTERAÇÃO COM GIT --
+
+	GUI: Graphical User Interface
+
+	CLI: Command Line Interface
+
+Benefícios:
+
+
+Controle de versão
+
+Armazenamento em nuvem
+
+Trabalho em equipe
+
+Possibilidade de melhorar do seu código através de contribuição por Forks
+
+Reconhecimento
+
+Comandos Windows:
+
+- cd (change directory)
+
+- dir
+
+- mkdir (make directory)
+
+- del 
+
+- cls (clear screen)
+
+- Tab: auto-complementar pastas
+
+- echo: printar algo no terminal
+
+- ">": redirecionador de fluxo (ex: redirecionar "hello" para um arquivo txt)
+
+	- echo hello > hello.txt
+
+- del: deletar ARQUIVOS dentro de pastas, não os repositórios (pastas) em si
+
+- rmdir: remove directory (remover repositório/pasta)
+
+Comandos Unix:
+
+* bash (terminal linux)
+
+- cd
+
+- ls
+
+- mkdir
+
+- rm -rf
+
+	- rm: remove
+
+	- r: recursive (dentro da pasta pode conter várias outras pastas, deletará tudo)
+
+	- f: force (não aparecer confirmação)
+
+- clear / ctrl + L
+
+- sudo su:
+
+	- sudo: executar comandos com privilegios de outro usuario
+
+	- su: mudar de usuário no terminal
+
+	- sudo su: usuário se torna root
+
+* Windows possui Windows Subsystem for Linux
+
+* Flags: complementos de comandos que acrescentam/modificam/formatam a forma que os comandos seráo devolvidos para nós
+
+	flags úteis: /s, /q, /a (mostrar arquivos ocultos)
+
+* Silence on Success: se o comando no shell der certo, normalmente não acontece nada
+
+
+--------
+
+SHA: algoritmo de encriptação (secure hash algorithm)
+
+	- identificar/representar arquivos de forma segura e rapida
+
+Objetos internos do Git responsáveis pelo versionamento do nosso código:
+
+	- BLOBS
+	- TREES
+	- COMMITS
+
+
+* BLOBS/bolha:
+
+	- com "git hash-object": retorna sha1 de caracteres dados
+	diferente de quando usamos openssl sha1
+
+	- esses 'object' são manipulados através de objetos
+	então, os arquivos ficam dentro do objeto Blob,
+	do qual contém METADADOS do git dentro.
+	
+		- blob contém tipo (tipo), tamanho (9 neste caso abaixo), \0 e o conteúdo do arquivo
+
+		ex: echo 'conteudo' │ git hash-object --stdin
+		
+		ou 
+		
+		echo -e 'blob 9\0conteudo' │ openssl sha1
+	
+* Tree:
+
+	- armazenam blobs
+
+	- apontam para blobs que tem o sha1, e o NOME desse arquivo, do contrario do blob (apenas SHA)
+	ou outras árvores, que por consequencia podem apontar para outras bolhas/blobs.
+
+	- monta estruturas de onde estão os arquivos
+
+Resumo: as bolhas possuem o sha1 do arquivo, as trees apontam para essas blobs, e há um SHA1 do metadado das arvores
+	blobs mudados influenciam na árvore, estruturas mudadas
+	
+	Blobs encapsulam comportamento de diretorio e aponta para diretorios que contem arquivos
+
+	Blobs alterados alteram metadados da árvore (sha do blob alterado, sha da arvore altera também)
+
+* Commit:
+
+	- aponta para uma tree
+
+	- aponta para um parente (ultimo commit realizado antes dele)
+
+	- aponta para um autor
+
+	- aponta para uma mensagem
+
+	- timestamp
+
+* GIT é um sistema distribuido seguro
+
+------
+
+* Chaves SSH e Tokens
+
+
+
+-- MENÇÕES --
+
+BitBucket;
+
+GitLab;
+
+Pastas começando com . (ponto) são pastas ocultas.
+
+-----
+
+TOKEN pessoal: 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
+
+---------
+
+05/02
+
+Markdown: representação do HTML
+
+* #: h1
+  ##: h2
+  etc.
+
+* .md: extensão Markdown
+
+-- Working Directory -> Staging Area --
+
+* Untracked: arquivos que o Git não tem ciência (ele é diferente do último commit dado)
+
+* Tracked: arquivos que o Git tem ciência
+
+* Unmodified: arquivo que ainda não foi modificado
+
+* Modified: arquivo que sofreu modificação
+
+* Staged: (conceito chave) arquivos em preparação para fazer parte de outro tipo de agrupamento
+
+-- Staging área -> Local Repository --
+
+* Staged
+
+* (objeto)Commit: "envelopar" com significância
+
+	- retorna os arquivos à Unmodified (aguardando
+	novas modificações) e inicia o ciclo novamente
+
+	- integra repositório local, do qual é empurrado
+	para um reposítorio remoto
+
+* Reposítório local: apenas composto por commits
+
+* Repositório remoto: ex: GitHub
+
+--- COMANDOS Git IMPORTANTES ---
+
+git init
+
+git config --global user.email / user.name ""
+
+	- verificar informações:
+
+		- git config --list
+
+	- reescrever/apagar configurações:
+
+		- git config --global --unset user...	
+
+git add (mover arquivos à staged)
+
+git commit (criar imagem de alterações)
+
+git status (monitorar os status dos arquivos)
+
+mv (mover arquivo para outras pasta)
+
+	- mv strogonoff.md ./receitas/
+
+git restore --staged <file> (mudar para unstaged)
+
+git remote add origin: adicionar versão do repositório local para um remoto
+
+	origin: alias/apelido, para não precisarmos digitar o link https o tempo inteiro
+		(origin é um nome de convenção)
+
+git push origin master: empurrar repositório local para remoto
+
+	master: branch que enviamos o código (pode ser qualquer uma)
+
+git pull: puxar do remoto para o local
+
+git clone: clonar repositório já existente do github
+
+	- git clone <linkrepositório> (contém pasta .git)
+
+Flags git:
+
+	-m: mensagem
+
+		- git commit -m "": envelopar em uma mensagem
+		dando significancia e criou este objeto "Commit"
+
+	git remote -v: repositorios remotos na qual o 
+	repositorio local está apontado
+
+Working Directory -> git add -> Staging Area - git commit -m -> Local Repository
+
+---- Branches ----
+
+* Bifurcação/ramificação do conteúdo atual
+
+* Realiza merge com a branch principal
+
+* Branches vivem dentro de commits (necessitam de)
+
+* Branch main é a principal atualmente, não master
+
+* Tag HEAD
+
+	* a Tag Head é "você", ela te mostra aonde você
+	está localizado dentro do historico de commits e
+	qual branch você está
+
+	- aponta para o ultimo commit válido em uma branch
+	
+	* SITE PARA PRÁTICA:
+
+		- https://git-school.github.io/visualizing-git/
+
+	- quando um commit é criado, a branch master avança 
+	dentro desse commit e a tag head se move junto 
+	(apontando para os commits anteriores)
+
+		- quando um outro commit é criado, a tag head
+		se move junto com a branch master e este
+		novo commit
+
+	- quando uma nova branch é criada
+
+	* comandos usados no site:
+
+		git commit -m "c1"
+		git commit -m "c2"
+		git checkout -b nova-branch (criar branch com este nome)
+		git commit -m "c3"
+		git commit -m "c4"
+		git commit -m "c5"
+		git checkout master (mandar tag head para
+		branch master)
+		git merge nova-branch
+
+	* HEAD SEMPRE APONTARÁ AONDE VOCÊ ESTÁ
+
+* stage = index
+
+* git checkout: se movimentar por branches
+
+	* complementos do comando:
+
+		-b: criar uma nova branch e se movimentar
+		para ela (ex: git checkout -b nova-funcao)
+
+	* branch nova carrega todos o historico de commits
+	da qual ela se originou (ou seja, não mostrará 
+	apenas commits dados nessa branch) = bifurcação
+
+* fundir branches (ex: na branch main, fundimos os trabalhos deste e de uma branch nova, para que o que trabalhamos na branch nova esteja na branch main)
+
+	- ir para branch main com checkout
+
+		- git merge: pedir para fundir branch com branch dada
+	
+			(estando na branch main)
+
+			- git merge nova-funcionalidade (nova branch criada anteriormente)
+
+-- COMANDOS branch --
+
+* verificar em qual branch estamos: git branch (em verde, a branch que estamos no momento
+
+* trocar nome de branch (estando na branch desejada): git branch -m <novonome>
+* trocar nome de branch (estando em outra branch): git branch -m <nomeatual> <novonome>
+
+* deletar: git branch -d <nomedabranch>
+
+----
+
+* se mover para outra branch sem levar conteúdo atual para esta outra branch
+
+	- stash: aonde guardar alterações que você fez (guardar e retirar); estoque temporário
+
+		- git stash save "<contexto>": pegar tudo do staging area/index e untracked/working directory e adiciona em uma caixinha (stash)
+
+		- git stash clear: limpar todos os stashes
+
+* Boas práticas:
+
+	- não colocar grandes coisas/alterações no stash, ir trabalhar em outros locais e esquecer das alterações (git conflita caso encontre dois arquivos modificados ao mesmo tempo)
+
+		- salve o stash com um contexto
+
+----
+
+* Histórico: comparação/registro cronológico de commits
+
+	- git log
+
+		- traz a tag HEAD apontando para a branch main (no ultimo commit válido)
+		- primeiros caracteres do commit
+		- SHA1
+
+	*ver em arquivo ou pasta específica*
+
+		- git log <nomepastaouarquivo>
+
+	*ver log de forma especifica*
+
+		- git log --oneline
+
+	*ver log de forma ilustrada*
+
+		- git log --graph
+
+	*ferramenta de visualização*
+	
+		- gitk
+
+Tecla Q: sair do log
+
+----
+
+* Reverter commits
+
+* git reset 
+
+	flags:
+
+	--soft: forma inversa do git add, reverte o commit, pega todos os arquivos que o commit manipulou e coloca no no index. Ou seja, git add passa do staging/index para o commit; git reset --soft para do commit para o staging/index
+
+	--mixed (default): reverter arquivos para working directory/untracked
+
+	--hard: limpar totalmente o commit, como se não tivesse existido
+
+
+* git revert
+
+	- reverter alterações de commit indicado pela tag HEAD ou hash
+
+----
+
+* Estruturação de commits
+
+		- Melhor legibilidade do histórico
+
+		- Amigável para novos desenvolvedores
+
+		- Amigável ao versionamento semântico
+
+
+	* Commits Atômicos
+
+		-  se organizar para que os commits saiam 'envelopados', concisos para melhor interpretação por outros desenvolvedores
+
+		- é uma unidade, mantenha os commits com início, meio e fim
+
+	* Português x Inglês
+
+		- implementar o idioma de acordo com as demandas da empresa
+
+	* Estrutura:
+
+		- Assunto/Subject: 
+
+			- curto e compreensível (até 50 caracteres, por conta de problemas de UI);	
+			- começar com letra maiúscula;
+			- não terminar em ponto;
+			- escrito de forma imperativa 
+				(Add a feature / Adiciona uma funcionalidade) = indicar ação
+
+			- If applied, this commit will...
+
+				add payment integration
+				update database configurations
+				remove redundant code
+
+			- Se aceito, esse commit...
+		
+				adiciona método de pagamento
+				atualiza configurações do banco de dados
+				remove código redundante
+		
+
+		- Corpo: Conteúdo/detalhes:
+
+			- Adicione detalhes ao commit
+			- Tente quebrar a linha em 75 caracteres (melhor legibilidade em terminal, assim como citado no assunto)
+			- Identifique sua audiência (identificar com quem você está conversando ou contribuindo)
+			- Explique tudo (o código NÃO é auto-explicativo)
+			- Use markdown (Titulos destacados, bullet point, italian, bold etc)
+
+		- Rodapé
+
+			- Referencia assuntos relacionados
+
+		* Usar quebras de linhas frequentemente
+		* Terminar corpo com "...commit faz uso de:" sempre que possível
+
+	* Commits Semânticos/Conventional Commits:
+
+		- fix: um commit do tipo fix corrige um bug (bem pequeno) na base de código, e se correlaciona com PATCH do versionamento semântico.
+
+		- feat: um commit do tipo feat inclui um novo recurso na base de código, e se correlaciona com MINOR do versionamento semântico
+
+		- BREAKING CHANGE ou ! depois do tipo/escopo (ex: ! depois do feat ou fix): correções maiores, se correlaciona com MAJOR do versionamento semântico
+
+--
+
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+
+--
+
+* Semantic Versioning:
+
+			- 3.2.7
+
+			3: Major = Alteração muito grande (quebra compatibilidade com outras versões)
+			2: Minor = Alteração menor (ex: implementa nova funcionalidade mas não quebra compatibilidade com outras versões)
+			7: Patch = Correções de bug etc.
+
+
+* git commit:
+
+	:q: saia do editor
+  	:q!: saia do editor sem salvar nada
+	:wq: saia do editor e salve
+	v: editar visualmente
+	insert: editar/inserir 
+	Closes #1: fechar issue do GitHub
+		...#1 Ref#123 (commit que resolve issue)
+	esc: sair do modo de edição
+	
+
+
+* Issues (GitHub)
+
+	- Problemas/questões que pessoas encontram no repositório
+
+----
+
+* VSCODE:
+
+	- U: Untracked
+	- A: Added
+	- Nada: Staged
+	- M: Modified
+
+---------
+
+--- ANOTAÇÕES ---
+
+trocar do Vim para o VSCode no Git Bash:
+
+	git config --global core.editor "code --wait"
+
+branch: uma cópia da ranch origem pronta para receber mais commits
+
+.gitignore: ignorar arquivos de build 

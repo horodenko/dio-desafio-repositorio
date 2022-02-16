@@ -1,0 +1,362 @@
+11/02	
+
+---- Conceitos Básicos ----
+
+	1. Objetivos de Negócios
+
+	↓ (REQUISITOS)
+
+	2. Processo de Desenvolvimento
+
+		- Concepção
+		- Análise & Design
+		- Desenvolvimento
+		- Testes
+		- Implantação
+	
+	↓
+
+	
+	3. Software que ajuda a empresa a atender algum 		objetivo de negócio
+
+	--- Desafios do Desenvolvimento de Software ---
+	
+	* Princípio de Pareto: se aplica ao desenvolvimento de 	software, onde 20% das funcionalidades costumam gerar 	80% ou mais do benefício esperado.
+
+	--- Gestão de Projetos (Tradicional x Ágil) ---
+
+	* Tradicional (Waterfall): Só permite que o projeto 		avance quando uma fase está inteiramente completa.
+
+		ex: Quando a parte de Design está completa, o 			projeto avança.
+
+		(Demanda muito tempo, por conta de diversos 			fatores, como dificuldade de homologar, 			seja por conta do cliente, ou os participantes 			do projeto)
+
+	* Ágil: Software construído por partes (incremental) e 			cada parte executa-se em um ciclo (iterativo)
+
+	* Comparativo entre as gestões:
+
+		Tradicional:
+
+			. Escopo definido na fase inicial do 				Projeto (Preditivo).
+
+			. Projeto é controlado por fases e 				marcos.
+		
+			. Cliente só vê o software funcionando 				na fase final do Projeto.
+
+			. Resistência a Mudanças. (ex: por 				conta de mudanças alterarem prazo, 				custo etc.
+
+		Ágil:
+
+			. Escopo definido ao longo do Projeto 				(Adaptativo) i.e. o cliente sabe que 				ele não tem a certeza do todo, então 				vai evoluindo conforme o projeto avança
+
+
+			. Projeto é controlado pro 					funcionalidades entregues.
+		
+			. Cliente pode ver parte do software 				funcionnado na parte inicial do 				Projeto.
+
+			. Mudanças constantes de acordo com 				feedback contínuo. 
+
+		* Em projetos tradicionais (Waterfall), você 			corre o risco de descobrir que estava errado 			depois de meses. Com o SCRUM, você descobre que 		estava errado em no máximo 30 dias (homológa 		dentro de 30 dias).
+
+	--- O que é se Ágil? ---
+
+		. Rapidez (mudança) e desembaraço;
+
+		. Fazer coisa complexas de forma simples;
+		(priorizar para facilitar formas de 		desenvolvimento. i.e. dividir projeto).
+
+		. Equipe comprometida com os objetivos;
+
+		. Maior valor para o cliente.
+
+		* Ter capacidade de responder rapidamente a 		mudanças.
+
+---- SCRUM ----
+
+	. SCRUM é um dos frameworks de gerenciamento de 		projetos ágeis.
+
+	. (IMPORTANTE) Projetos usando equipes pequenas e 	multidisciplinares produzem os melhores resultados.
+		i.e. Foco no resultado, e não na rapidez.
+
+	--- Transparência ---
+
+		. Conversar mais e escrever menos/apenas o 		necessário;
+
+		. Demonstrar o software constantemente aos 		usuários e obter feedbacks constantes;
+
+	--- Adaptação ---
+
+		. Requisitos mudam ao longo do tempo (adaptar o 		software ao cliente);
+
+	--- Inspeção ---
+
+		. Aprender progressivamente com o uso do 		software; Comprometimento; Ver o que cada um da 		equipe está fazendo para obter o objetivo da 		entrega.
+
+	--- Razões para adotar o SCRUM ---
+
+		. Desenvolvido e entregue em partes menores (2 		a 4 semanas), com constante feedback dos 		usuários;
+
+		. Melhor gerenciamento de riscos; (Redução de 		incertezas;
+	
+		. Comprometimento, motivação e transparência da 		equipe. (Daily Meeting);
+
+		. Maior valor para o negócio; (Priorização do 		Backlog);
+
+		. Usuários envolvidos durante todo o ciclo;
+
+		. Aplicação das Lições Aprendidas. (melhoria 		contínua).
+
+	--- Características do time SCRUM ----
+	
+		. Equipes capazes de se auto-organizarem;
+
+		. As tarefas são do time e todos são 		responsáveis (se um atrasa, toda a equipe é 		impactada;
+
+
+		. Forte comprometimento com os resultados.
+
+---- Papéis e Responsabilidades ----
+	
+	* Product Owner (PO):
+
+		- Representante da área de Negócios;
+
+		- PO não é um comitê;
+
+		- Define as funcionalidades do software 		(Product Backlog);
+		
+		- Prioriza as funcionalidades de acordo com o 		valor do negócio;
+
+		Garante que o time de desenvolviemnto entenda 		os itens do Backlog no nível necessário.
+
+	* Scrum Master (SM):
+
+		- Garantir o uso correto do SCRUM;
+
+		- Scrum Master não é Gerente de Projetos;
+
+		- Age como facilitador;
+
+		- Auxilia o PO no planejamento e estimativas do 		backlog;
+
+		- Auxilia a equipe a remover impedimentos;
+
+		- Treina o time em autogerenciamento e 		interdisciplinaridade.
+
+	* Time de Desenvolvimento (DEV):
+
+		- Possui habilidades suficientes para 		desenvolver, testar, criar e desenhar, ou seja, 		tudo que for necessário para entregar o 		software funcionando.
+
+---- Cerimônias do SCRUM ----
+
+	--- Time Box ---
+
+		. Tempo máximo para fazer uma cerimônia ou 				Sprint (doutrinar equipe para fazer uma 				cerimônia);
+
+		. Sprint: é o principal evento do SCRUM;
+		(corrida/arrancada)
+
+			- Duração de 1 Sprint:
+				
+				. 30 dias corridos (ou menos)
+
+		* Composição de uma Sprint:
+
+			- Planejamento da Sprint;
+	
+			- Reuniões Diárias (Daily Meeting);
+
+			- Revisão da Sprint (Review);
+
+			- Retrospectiva da Sprint.
+
+			* Quem participa?
+
+				- PO, SM e DEV.
+	
+		* Time Box: 8h (Sprint 30 dias):
+
+				- PO explica para o time o que 					ele deseja naquela Sprint.	
+
+				- DEV retira as dúvidas 			necessárias em relação ao negócios.
+
+				- Time DEV quebra as atividades 				e entende tecnicamente o que 				precisa ser feito, estima as atividas também.
+			
+			* Planning Poker: estimativa de cada 			tarefa.
+
+			* Daily Meeting:
+
+				- Feita de pé (retira 				acomodação);
+
+				- 3 perguntas, durando 15 				minutos;
+
+				- Quadro Kanban (To Do, Doing, 						Done).
+
+		* Time Box: 4h (Sprint 30 dias):
+
+			* Revisão da Sprint (Review):
+
+				- Time DEV apresenta para o PO o 				trabalho feito;
+				
+		* Time Box: 3h (Sprint 30 dias):
+
+			* Retrospectiva da Sprint
+
+			
+				- Reunião da equipe para Lições 					Aprendidadas;
+	
+				- TRANSPARÊNCIA para que o time 					fique comprometido.
+
+
+---- Fundamentos de um projeto ágil ----
+
+	* Time DEV ensina a equipe a ser auto-gerenciado, 	anulando a necessidade da presença do SM futuramente.
+
+	* Refining e Planning
+
+		* Refining: PO apresenta previamente pro time a 		historia que devera ser apresentada na Planning;
+
+			- Questionamento do PO;
+
+			- Permitido participação de stakeholders;
+
+		* Planning: PO pega os itens mais refinados e 		apresenta para o time; efetuar leitura completa 		de cada historia do time; evitar achismo do time 		de DEV; 
+
+			Primeira etapa:
+
+			- Após a leitura do time, ver o que 					entra e o que não entra.
+	
+			Segunda etapa:
+
+			- PO não participa para não exercer 			influencia sobre atividadas
+
+			- Time decide quais atividades deverão 			ser desenvolvidas e entregue 
+
+			- PO deve ser um cargo par, e não 			superior.
+
+		* Release Planning:
+
+			- Liberação ou lançamento de software;
+
+			- Não é obrigatorio ter uma ao final de 			cada Sprint (porém, problemas podem ser 			enfrentados, como o merge / junção dos 			códigos de cada sprint)
+
+			* RP de Múltiplas Squads:
+
+				- Vários times agrupados fazendo 				coisas distintas que podem ou 				não ter correlação entre as 				atividades, mas que ao final 				devem ser agrupadas em uma unica 				release para serem implementas 						em produção (tipo de RP 				técnica);
+
+				- Não tem ação direta de PO, 				apenas acompanhar a homologação 				após o merga para certificar a 				entrega.
+
+			* RP de Projeto:
+
+				- PO possui demanda alta;
+
+				- PO possui senioridade, deverá 				compreender demanda, história e 				quebrá-las ao máximo;
+
+				- Discernimento de dimensão de 				projeto;
+			
+				- Gerenciar expectativas de 				stakeholders.
+
+---- Conceitos ----
+
+* Estórias vs. Tarefas
+	
+	- Épico : objetivo macro, quebrado em objetivos menores
+
+	- Estória (do épico)
+
+		- Quando as estorias forem priorizadas nas 		sprints, são quebradas em tarefas
+
+		- descrita em nivel de negócio para que o time 		entenda o objetivo, o que deve ser feito, como 		sera usado (o projeto)
+	
+	- Tarefa: Um conjunto de atividades que o time de dev 	deve desempenhar para entregar a estória
+	
+* O que é um critério de aceite:
+
+	- É uma lista de critérios que para que a estória atenda aos requisitios do cliente
+
+* Cliente interno / Stakeholder
+
+	- é uma pessoa ou grupo que legitima as açoes de uma 	organizaçao e que tem um papel direto ou indireto na 	gestao e resultados dessa mesma organizaçao.
+
+	- Pessoa ou grupo de pessoas interessadas no projeto em 	questao, não necessariamente é o patrocinador, é um 	analista ou gerente deste mesmo departamento. E o PO 	deve saber conversar com esse publico.
+
+---- Rotinas de um projeto ágil ----
+
+* Daily e Retrospectiva (15mn, mesmo horario e mesmo lugar)
+
+	* Daily
+	
+	- Presente do time de DEV (sm e po não obrigatorio)
+
+	- cerimonia que mais agrega valor ao produto final
+
+	- qualquer assunto desde que agrege valor ao projeto
+
+	* Retrospectiva
+
+	- Presença do PO importante mas não obrigatorio 
+
+	- Presença obrigatório do SM
+	
+	- Em time menos maduros, fazer duas sessões, com e sem 	PO
+
+	- Verificar que a essencia da Daily esteja na retro, porém, a Daily é focada nas tarefas do dia-a-dia, a retro é focada na Sprint como um todo.
+
+	- Em um time maduro, SM e PO não necessitam de ajudar.
+
+* Refinamento
+
+	- Cerimonia nao oficial do Scrum, mas muito utilizada 	para que o time juntamente ao PO discuta a 	proxima 	Sprint (entregaveis e possiveis duvidas)
+
+	- Aumentar entendimento da demanda por parte do time, qualidade da entrega e retorno esperado do projeto
+
+	- Varias perguntas ao PO a fim de entender a demanda
+
+	- Estoria ja há de estar bem escrita, para que não haja duvidas
+
+	- Presença de todo o time obrigatória	
+
+	- Acontece antes da retro e review
+
+* Review
+
+	- Time de DEV, oportunidade de mostrar o trabalho de cada um na Sprint anterior e retirar duvidas tecnicas
+
+	- Duvidas de negocio retiradas pelo PO
+
+	- Time inteiro obrigatorio
+
+	- Convidados interessados na entrega (Stakeholder, demandantes diretos, lideres tecnicos ou outros gestores)
+
+	- Ver o que está sendo entregue, validar mudança no fluxo, bater com o que foi definido no refinamento e planning
+
+	- Verificar se agrega valor ao negocio	
+
+* Planning: inicio da Sprint
+
+* Maturidade de equipe
+		
+	- Um time nunca sera n se a empresa não for n
+
+	- Amadurecimento ligado ao ambiente situado	
+
+	- Um time deve possuir transparência, inspeção e 	adaptação
+	
+	- Deve vivenciar os pilares do scrum e nao depende do SM
+
+	- Questiona o PO e o ajudá-o a quebrar as estórias e encaixá-las em uma Sprint
+
+	- O time de DEV puxa o PO
+
+	- Time maduro = Time que anda sozinho
+
+* Tarefa: conjunto de atividade que o time de desenvolvimento deve desempenhar para entregar a estória.
+
+
+---- ANOTAÇÕES ----
+
+Backlog (Épico, estória e atividade);
+
+MVP (Minimum Viable Product) / Crescimento do produtocom feedbacks do cliente;
+
+Transformação Digital (muito mais sobre pessoas do que a tecnologia em si / centralizado no cliente); PO tem um papel fundamental;

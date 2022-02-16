@@ -1,0 +1,241 @@
+11/02
+
+---- Visão Geral ----
+
+Refere-se ao processo de pensamento envolvido na expressão de soluções em passos computacionais ou algoritmos que podem ser implementados no computador.
+
+* Baseado em 4 pilares:
+
+	- Decomposição: dividir um problema complexo em subproblemas
+
+	- Reconhecimento de padrões: Identificar padrões ou tendências (similaridades e diferenças entre os problemas
+
+	- Abstração: Extrapolar o conceito do problema para uma forma generalista
+
+	- Design de algoritmos: Automatizar - Definir passo a passo a resolução de um problema
+
+---- Habilidades Complementares ----
+
+* Raciocinio Logico é uma forma dep ensamento estruturadod, ou raciocinio, que permite encontrar a conclusao ou determinar a resolucao de um problema
+
+	- Classificacao (INDUÇÃO, DEDUÇÃO, ABDUÇÃO):
+
+		- Fenômeno observado -> Indução -> leis e teorias
+
+		- Leis e teorias -> Dedução -> Previsoes e explicaçoes
+
+		- Conclusão -> Premissa (ex: a grama está molhada, logo deve ter chovido)
+
+* Aperfeiçoamento
+
+	- Melhoramento; Ato de aperfeiçoar; Aprimoramento; Refinamento;
+
+		- A partir de uma solucao, determinar pontos de melhora ou refinamento.
+
+		. Encontrar solucao eficiente;
+		. Otimizar processos;
+		. Simplificar linhas de codigos;		
+		. Funçoes bem definidas
+
+---- Pilares ----
+
+	* Decomposiçao: 
+
+	Análise: Processo de quebrar e determinar partes menores e gerenciaveis 
+
+	Sintese: Combinar os elementos recompondo o problema original
+
+	Ordem de execução menos - > Sequencial ou Paralelo
+
+		Sequencial: dependencia entre tarefas executadas em "fila"
+
+		Paralelo: Tarefas podem ser executadas paralelamente / concomitantemente
+
+	Def. de Decomposiçao: detectar variaveis a partir de pequenos problemas, e segmentar problemas grandes dentro destes pequenos
+
+		- Maneiras distintas de decompor o mesmo problema	
+
+		- Nao basta aplicar
+
+	Como decompor?
+
+		- Entenda o problema:
+
+		- Identifique: Componentes, caracteristicas e dependencias
+
+		Identificar ou coletar dados -> agregar os dados -> fornecer funcionalidade (resultado)
+
+		Ex: cozinhar
+
+		. Identificar os ingredientes
+		. Determinar as etapas (sequencial ou paralelo)
+		. Executar cada etapa
+		. Agregar os ingredientes de forma coerente para finalizar
+
+		Ex: funcionamento de uma bike
+
+		. Identificar os coponentes
+		. Papel de cada componente      
+		. Interdependencia das peças 	
+
+			= funcionamento do sistema
+
+		Ex: criar um app
+
+		. Finalidade
+		. Interface
+		. Funcionalidades
+		. Pré-requisitos (quais são os aspectos ou funçoes que eu preciso para que meu app funcione)
+
+			= Definiçao de componentes e etapas
+
+		Ex: Artigo
+
+		. O que sera abordado?
+		. Estrutura
+		. Conteudo de cada topico
+		. Textos de conexao
+
+---- Reconhecimento de padrões ----
+
+* Modelo base
+* Estrutura invariante (caracteristicas que nao se modificam)
+* Repeticao (ex: numeros)
+
+	- Compressão: armazenar mídia 
+
+		- Armazenar mídia: pegar info. através dos metadados, realizar a compressão, e salvar e armazenar os dados no servidor.
+
+	- Por que determinar padrões:
+
+		- Generalizar, com objetivo de obter resoluçao para problemas diferentes
+
+	- Classif. de objetos a partir de Classes e Categorias
+	
+		- Dependem do domínio; E tipo de objeto
+
+	- Como o computador reconhece padrões?
+
+		Pelo ser humano: grau de similiaridade (ex: fruta azeda;
+
+			Grupos conhecidos x objeto desconhecido
+
+				= COMPARAÇÃO
+
+	 	Como simular esse comportamento?
+	
+			Representação de atributos
+
+			Aprendizado - conceito associado ao objeto
+
+			Armazenar dados
+
+			Regras de decisão
+
+	* Reconhec. de padrões (RESUMO):
+
+		- Extração de caracteristicas
+		- Classif. de Dados
+
+			= Abordagem
+
+		* Diferentes métodos e aplicações
+
+
+		* Aplicações:
+
+			- Classif. de dados;
+			- Reconhecimento de imagem;
+			- Reconhecimento de fala;
+			- Análise de cenas;
+			- Classif. de documentos.
+
+---- Abstração ----
+
+* Abstrair:
+
+	- Observar um ou mais elementos, avaliando caracteristicas e propriedades em separado
+
+* Abstração:
+
+	- Processo intelectual de isolamento de um objeto da realidade
+
+		(retirar parte palpável e dividir em parte)
+
+* Generalizar:
+
+	- Tornar-se geral, mais amplo, extensão
+
+		- Focar em detalhes menos importantes e generalizá-lo
+
+* Representação de dados
+
+	- Pontos essenciais
+
+	- Detalhes (desnecessários)
+
+* Conceitos baseados em abstrações:
+
+	- Merge Sort;
+	
+	- Clustering;
+
+	- Busca binária;
+
+	- Árvore
+
+	- Lista
+
+	- Grafos
+
+	- Linguagens de programação
+
+	- Comunicação (Broadcast, síncrona, assíncrona etc.)
+
+		- Síncrona: um após o outro
+
+		- Assíncrona: reordenar quando recebe do outro lado
+
+		- Paralela: diferentes para diferentes cores/servidores, e então, são agregados e processados
+
+	- Arquiteturas (Camadas, ponto a ponto, estrela)
+
+---- Algoritmos ----
+
+* O computador recebe, manipula e armazena dados
+
+* Análise:
+
+	- Estudo e definição dos dados de entrada e saída
+
+* Algoritmo:
+
+	- Descreve o problema por meio de ferramentas narrativas, fluxograma, ou pseudocódigo;
+
+* Codificação:
+
+	- O algoritmo é codificado de acordo com a linguagem de programação escolhida
+
+* Algoritmo:
+
+	. Sequencia de passos com objetivo definido
+	. Execução de tarefas específicas/explícitas
+	. Conjunto de operações que resultam em uma sucessão finita de ações
+
+* Como construir um algoritmo?
+
+	. Compreensão do problema
+	. Definição dados de entrada
+	. Definir processamento
+	. Definir dados de saída
+	. Utilizar um método de construção
+	. Teste diagnóstico
+
+* Construção de algoritmos (instruções de passo-a-passo):
+
+	. Narrativa: Utilização da linguagem natural (diversas interpretações possíveis / ambígua)
+
+	. Fluxograma: Utilização de símbolos pré-definidos
+(conhecimento prévio da estrutura e símbolos)
+
+	. Pseudocódigo: Portugol (Passos a serem seguido)

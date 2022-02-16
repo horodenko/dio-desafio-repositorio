@@ -1,0 +1,53 @@
+03/02
+
+Vetor e Matriz: apenas um tipo e valores previamente 
+determinados e acessados através de um número de indice,
+vetores uma dimensão, matrizes várias
+
+Registros: varios tipos 
+
+Listas: variaveis e manipuladas durante a execucao do algoritmo
+
+Pilha/Stack: lifo e fifo; acesso restrito (um item por vez)
+
+Fila: segue o conceito fifo
+
+--- ESTRUTURAS ESPECIAIS (IA, JOGO, BUSCA AVANÇADA etc.) ---
+
+Árvore: elementos organizados de forma hierárquica (pais e filhos)
+
+	raiz: topo da arvore/sempre o meio;
+
+	sub-elementos/sub-árvores: elementos subordinados à raiz;
+
+	nós/folhas: elementos subordinados aos sub-elementos;
+
+	facilita a busca;
+
+	vetor: é uma busca de forma lenta (posição por posição)
+
+Tabela hash/tabela de espalhamento: associa chaves de pesquisa
+à valores em uma estrutura de dados
+
+	generalizaçao da ideia do array, mas utiliza de uma função
+	chamada hash, do qual espalha elementos e os fazem ficar
+	de forma não ordenada dentro da tabela (que seria o "array")
+
+	valores: posicao ou indice onde o elemento se encontra
+
+	chave: parte da informação que compõe o elemento a ser
+	manipulado
+
+	chamar a chave pelo valor ou vice-versa
+
+	espalhar facilita a busca, pois a partir de uma chave
+	é possível acessar a posição do array rapidamente
+
+	ao invés de utilizarmos somente a posiçao, utilizamos
+	o codigo referente a este valor
+
+Grafos: estruturas que permitem programar a relacao entre objetos
+
+	objetos: vértices ou nós
+
+	relacionamentos: arestas

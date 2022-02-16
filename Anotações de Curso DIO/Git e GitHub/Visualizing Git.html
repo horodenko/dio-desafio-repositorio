@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://git-school.github.io/visualizing-git/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="./Visualizing Git_files/analytics.js.baixados"></script><script async="" src="./Visualizing Git_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115441830-1');
+</script>
+
+
+<title>Visualizing Git</title>
+<script src="./Visualizing Git_files/jquery.js.baixados"></script>
+<script src="./Visualizing Git_files/jquery-ui.min.js.baixados"></script>
+<script data-main="js/main" src="./Visualizing Git_files/require.min.js.baixados"></script>
+<link rel="stylesheet" href="./Visualizing Git_files/normalize.css">
+<link rel="stylesheet" href="./Visualizing Git_files/1140.css">
+<link rel="stylesheet" href="./Visualizing Git_files/explaingit.css">
+<link rel="stylesheet" href="./Visualizing Git_files/jquery-ui.min.css">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./Visualizing Git_files/main.js.baixados"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="explaingit" src="./Visualizing Git_files/explaingit.js.baixados"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="demos" src="./Visualizing Git_files/demos.js.baixados"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="historyview" src="./Visualizing Git_files/historyview.js.baixados"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="controlbox" src="./Visualizing Git_files/controlbox.js.baixados"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="d3" src="./Visualizing Git_files/d3.js.baixados"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="vendor/yargs-parser" src="./Visualizing Git_files/yargs-parser.js.baixados"></script></head>
+<body style="">
+
+<div id="ExplainGitZen-Container" style="display: block;">
+    <div class="playground-container">
+      <pre id="last-command" style="display: none;">git merge nova-branch</pre>
+    <div class="control-box"><select class="scenario-chooser"><option value="free">Free Explore</option><option value="free-remote">Free Explore with Remote</option><option value="upstream-changes">Upstream Changes</option><option value="rewritten-history">Rewritten Remote History</option><option value="revert">Revert</option><option value="cherry-pick">Cherry Pick</option></select><div class="log"><div class="info">Have fun!</div><div class="command-entry">git checkout master</div><div class="command-entry">git merge nova branch</div><div class="info">This demo only supports the --no-ff switch..</div><div class="error">Cannot find ref: nova</div><div class="command-entry">git merge nova-branch</div><div class="info">You have performed a fast-forward merge.</div></div><input type="text" class="input" placeholder="enter git command"></div><div class="svg-container"><svg id="ExplainGitZen" height="652" width="1305"><text class="remote-name-display" x="10" y="25">Local Repository</text><text class="current-branch-display" x="10" y="45">HEAD: master</text><g class="pointers"><line id="ExplainGitZen-e137e9b-to-initial" class="commit-pointer" x1="24" y1="391" x2="-8.8" y2="391" marker-end="url(#triangle)"></line><line id="ExplainGitZen-eb1da9b-to-e137e9b" class="commit-pointer" x1="114" y1="391" x2="81.2" y2="391" marker-end="url(#triangle)"></line><line id="ExplainGitZen-1676ee1-to-eb1da9b" class="commit-pointer" x1="204" y1="391" x2="171.2" y2="391" marker-end="url(#triangle)"></line><line id="ExplainGitZen-3ec2338-to-1676ee1" class="commit-pointer" x1="294" y1="391" x2="261.2" y2="391" marker-end="url(#triangle)"></line><line id="ExplainGitZen-ba6e052-to-3ec2338" class="commit-pointer" x1="384" y1="391" x2="351.2" y2="391" marker-end="url(#triangle)"></line><line id="ExplainGitZen-ccf7449-to-ba6e052" class="commit-pointer" x1="474" y1="391" x2="441.2" y2="391" marker-end="url(#triangle)"></line></g><g class="commits"><text class="message-label" x="500" y="435">c5</text><text class="message-label" x="410" y="435">c4</text><text class="message-label" x="320" y="435">c3</text><text class="message-label" x="230" y="435">c2</text><text class="message-label" x="140" y="435">c1</text><text class="id-label" x="500" y="425">ccf7449..</text><text class="id-label" x="410" y="425">ba6e052..</text><text class="id-label" x="320" y="425">3ec2338..</text><text class="id-label" x="230" y="425">1676ee1..</text><text class="id-label" x="140" y="425">eb1da9b..</text><text class="message-label" x="50" y="435">first commit</text><text class="id-label" x="50" y="425">e137e9b..</text><circle id="ExplainGitZen-e137e9b" class="commit" cx="50" cy="391" r="20"></circle><circle id="ExplainGitZen-eb1da9b" class="commit" cx="140" cy="391" r="20"></circle><circle id="ExplainGitZen-1676ee1" class="commit" cx="230" cy="391" r="20"></circle><circle id="ExplainGitZen-3ec2338" class="commit" cx="320" cy="391" r="20"></circle><circle id="ExplainGitZen-ba6e052" class="commit" cx="410" cy="391" r="20"></circle><circle id="ExplainGitZen-ccf7449" class="commit checked-out" cx="500" cy="391" r="20"></circle></g><g class="tags"><g class="branch-tag"><rect width="68" height="20" y="466" x="466"></rect><text y="480" x="500">master</text></g><g class="branch-tag head-tag"><rect width="52" height="20" y="491" x="474"></rect><text y="505" x="500">HEAD</text></g><g class="branch-tag"><rect width="108" height="20" y="441" x="446"></rect><text y="455" x="500">nova-branch</text></g></g></svg></div></div>
+</div>
+
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="0" height="0">
+
+    <marker id="triangle" refX="5" refY="5" markerUnits="strokeWidth" fill="rgba(100,100,100,0.8)" markerWidth="4" markerHeight="3" orient="auto" viewBox="0 0 10 10">
+        <path d="M 0 0 L 10 5 L 0 10 z"></path>
+    </marker>
+    <marker id="faded-triangle" refX="5" refY="5" markerUnits="strokeWidth" fill="#DDD" markerWidth="4" markerHeight="3" orient="auto" viewBox="0 0 10 10">
+        <path d="M 0 0 L 10 5 L 0 10 z"></path>
+    </marker>
+    <marker id="brown-triangle" refX="5" refY="5" markerUnits="strokeWidth" fill="rgba(100,100,100,0.8)" markerWidth="4" markerHeight="3" orient="auto" viewBox="0 0 10 10">
+        <path d="M 0 0 L 10 5 L 0 10 z"></path>
+    </marker>
+</svg>
+
+<script type="text/javascript">
+require(['explaingit', 'demos'], function (explainGit, demos) {
+    function ready(fn) {
+      if (document.readyState != 'loading'){
+        fn();
+      } else {
+        document.addEventListener('DOMContentLoaded', fn);
+      }
+    }
+
+    function clearSavedState () {
+      if (window.localStorage) {
+        window.localStorage.removeItem('git-viz-snapshot')
+      }
+    }
+
+    function cleanupDom () {
+      $('.svg-container.remote-container').remove()
+    }
+
+    function clean () {
+      clearSavedState()
+      cleanupDom()
+    }
+
+    function cleanHash (hash) {
+      return hash.replace(/^#/, '')
+    }
+
+    function findDemo (demos, name) {
+      return demos.filter(function (d) {
+        return d.key === name
+      })[0]
+    }
+
+    function copyDemo (demo) {
+      // make a deep copy
+      return JSON.parse(JSON.stringify(demo))
+    }
+
+    var lastDemo = findDemo(demos, cleanHash(window.location.hash)) || demos[0]
+
+    ready(function () {
+      window.onhashchange = function () {
+        var demo = findDemo(demos, cleanHash(window.location.hash)) || lastDemo
+        if (demo) {
+          lastDemo = demo
+          document.getElementById('last-command').textContent = ""
+          clean()
+          open()
+        }
+      }
+
+      open()
+    })
+
+    function open() {
+      explainGit.reset();
+
+      var savedState = null
+      if (window.localStorage) {
+        savedState = JSON.parse(window.localStorage.getItem('git-viz-snapshot') || 'null')
+      }
+
+      var initial = Object.assign(copyDemo(lastDemo), {
+        name: 'Zen',
+        height: '100%',
+        initialMessage: lastDemo.message,
+        undoHistory: savedState,
+        hvSavedState: savedState && savedState.stack[savedState.pointer].hv,
+        ovSavedState: savedState && savedState.stack[savedState.pointer].ov
+      })
+
+      explainGit.open(initial);
+    }
+
+    window.resetVis = function () {
+      if (confirm('This will reset your visualization. Are you sure?')) {
+        clean()
+        open()
+      }
+    }
+
+    window.pres = function () {
+      document.getElementById('last-command').style.display = 'block'
+    }
+});
+</script>
+
+
+</body></html>
